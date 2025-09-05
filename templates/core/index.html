@@ -1,0 +1,440 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% load humanize %}
+{% load i18n %}
+{% block meta_header %}
+    <title>Ngân Nguyễn - The Oasis Riverside</title>
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+    <meta property="og:title" content="Ngân Nguyễn - The Oasis Riverside" />
+    <meta property="og:description" content="The Oasis Riverside - Tuyệt Tác Kiêu Hãnh Ven Sông" />
+    <meta property="og:url" content="{% url 'core:index' %}" />
+    <meta property="og:image" content="{% static 'assets/img/logo/logo.png' %}" />
+{% endblock meta_header %}
+{% block content %}
+<!-- Banner -->
+<div id="home" class="two-banner-wrap">
+    <div class="two-banner-slider owl-theme owl-carousel">
+        <div class="two-banner-area two-banner-one">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="banner-content">
+                            <span style="color: #00C195;">
+                                {% trans 'Welcome To The Oasis Riverside' %}
+                            </span>
+                            <h1>{% trans 'Tuyệt Tác Kiêu Hãnh Ven Sông' %}</h1>
+                            <div class="banner-btn">
+                                <a class="cmn-banner-btn" href="#contact">
+                                    <i class='bx bxs-contact'></i>
+                                    {% trans 'Liên hệ' %}
+                                </a>
+                                <a class="banner-right-btn" href="#du_an">
+                                    <i class='bx bxs-building-house'></i>
+                                    {% trans 'Dự án' %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="two-banner-area two-banner-two">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="banner-content">
+                            <span style="color: #00C195;">
+                                {% trans 'Welcome To The Oasis Riverside' %}
+                            </span>
+                            <h1>{% trans 'Tuyệt Tác Kiêu Hãnh Ven Sông' %}</h1>
+                            <div class="banner-btn">
+                                <a class="cmn-banner-btn" href="#contact">
+                                    <i class='bx bxs-contact'></i>
+                                    {% trans 'Liên hệ' %}
+                                </a>
+                                <a class="banner-right-btn" href="#du_an">
+                                    <i class='bx bxs-building-house'></i>
+                                    {% trans 'Dự án' %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="two-banner-area two-banner-three">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="banner-content">
+                            <span style="color: #00C195;">
+                                {% trans 'Welcome To The Oasis Riverside' %}
+                            </span>
+                            <h1>{% trans 'Tuyệt Tác Kiêu Hãnh Ven Sông' %}</h1>
+                            <div class="banner-btn">
+                                <a class="cmn-banner-btn" href="#contact">
+                                    <i class='bx bxs-contact'></i>
+                                    {% trans 'Liên hệ' %}
+                                </a>
+                                <a class="banner-right-btn" href="#du_an">
+                                    <i class='bx bxs-building-house'></i>
+                                    {% trans 'Dự án' %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 p-0">
+                <div class="banner-time-left">
+                    <ul>
+                        <li>
+                            <i class='bx bx-phone-call'></i>
+                            <span>(24 hours / 7 days)</span>
+                            <a href="tel:0909901666">090.990.1666</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <div class="banner-time-right">
+                    <ul>
+                        <li>
+                            <i class='bx bxs-contact'></i>
+                            <span>{% trans 'Liên hệ' %}</span>
+                            <a href="mailto:ngannguyen.sunreal@gmail.com">ngannguyen.sunreal@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Banner -->
+
+<!-- Start Confidence Home Area -->
+<!-- <div id="home" class="confidence-home-area-wrap">
+    <div class="container">
+        <div class="confidence-home-wrap-content">
+            <h1>The Oasis Riverside</h1>
+            <p style="color: #00C195;">{% trans 'Tuyệt Tác Kiêu Hãnh Ven Sông' %}</p>
+        </div>
+        <div class="row justify-content-left">
+            <div class="col-lg-3 col-sm-6">
+                <div class="banner-buy-info-card">
+                    <div class="icon">
+                        <i class='bx bxs-contact'></i>
+                    </div>
+                    <p>
+                        <span style="color: #00C195;">{% trans 'Liên hệ' %}</span>
+                        <span><a href="mailto:ngannguyen.sunreal@gmail.com">ngannguyen.sunreal@gmail.com</a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="banner-buy-info-card">
+                    <div class="icon">
+                        <i class='bx bx-phone-call'></i>
+                    </div>
+                    <p>
+                        <span style="color: #00C195;">(24 hours / 7 days)</span>
+                        <span><a href="tel:0909901666">090.990.1666</a></span>
+                    </p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div> -->
+<!-- End Confidence Home Area -->
+
+<!-- Start Hotel About Area -->
+<div id="about" class="hotel-about-area ptb-120 quicksand-font-family">
+    <div class="container">
+        <div class="hotel-about-inner">
+            <div class="row justify-content-center align-items-center g-5">
+                <div class="col-lg-6 col-md-12">
+                    <div class="hotel-about-image">
+                        <div class="container-fluid">
+                            <div class="sp-video-view">
+                                <img src="{% static 'assets/img/hotel/about1.jpg' %}" alt="oasis riverside">
+                                <a href="https://www.youtube.com/watch?v=3N9hKl3TpAg" class="video-btn popup-youtube">
+                                    <i class="bx bx-play"></i> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="hotel-about-image">
+                        <img src="{% static 'assets/img/hotel/about1.jpg' %}" alt="image">
+                    </div> -->
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="section-top-title">
+                        <span class="sub">{% trans 'Giới thiệu' %}</span>
+                        <!-- <h2>An All-Inclusive Beachfront Resort In Baa Atoll, Maldives</h2> -->
+                        <p style="font-size: 13px; margin-bottom: 10px;">{% trans 'Khu biệt lập ven sông theo phong cách sống hiện đại là dự án tiếp nối sự thành công của The Oasis (Làng chuyên gia Việt Sing) tại Thành Phố Hồ Chí Minh (Cũ là Thuận An, tỉnh Bình Dương). Vượt qua mọi giới hạn của một nơi an cư thường thấy, The Oasis Riverside hội tụ những giá trị độc bản khó có thể tìm thấy ở bất cứ nơi đâu. Thiên nhiên ban tặng cho nơi đây một địa thế và vị trí tuyệt đẹp, trở thành nguồn cảm hứng bất tận cho đội ngũ thiết kế, để tạo nên một Tuyệt tác ven sông đầy kiêu hãnh ngay giữa lòng phố thị phồn hoa.' %}</p>
+                        <p style="font-size: 13px; margin-bottom: 10px;">{% trans 'Giống như nhiều đô thị phồn vinh trên thế giới gắn liền với những dòng sông xinh đẹp như: Sông Thame (London), sông Seine (Paris), Sông Hàn (Seol),... 𝐓𝐡𝐞 𝐎𝐚𝐬𝐢𝐬 𝐑𝐢𝐯𝐞𝐫𝐬𝐢𝐝𝐞 là "thành phố thu nhỏ" được bao bọc bởi 2 dòng sông Bình Minh - Thị Tính. Những căn biệt thự tọa lạc trên địa thế đắt giá này chính là biểu tượng của sự sang trọng, đẳng cấp và hiếm có.' %}</p>
+                        <p style="font-size: 13px;">{% trans '𝐁𝐢𝐞̣̂𝐭 𝐓𝐡𝐮̛̣ 𝐓𝐡𝐞 𝐎𝐚𝐬𝐢𝐬 𝐑𝐢𝐯𝐞𝐫𝐬𝐢𝐝𝐞 sẵn sàng mang lại cho chủ nhân một chuẩn mực sống mới với kiến trúc hoàn mỹ, gần gũi với thiên nhiên và không gian sống riêng tư, biệt lập, an ninh và tiện nghi tối ưu.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Hotel About Area -->
+
+<!-- Start Rental Du An Area -->
+<div id="du_an" class="rental-listing-area pb-120 quicksand-font-family">
+    <div class="container">
+        <div class="section-top-title">
+            <span class="sub">{% trans 'Dự Án' %}</span>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="one" role="tabpanel">
+                <div class="row left-content-center g-4">
+                    {% for p in products %}
+                    <div class="col-xl-3 col-md-6">
+                        <div class="rental-listing-card">
+                            <div class="listing-image">
+                                <div class="listing-images-slider owl-theme owl-carousel">
+                                    {% for p_img in p.p_images.all %}
+                                    <div class="image">
+                                        <a href="{% url 'core:product-detail' p.pid %}">
+                                            <img src="{{ p_img.images.url }}" alt="image">
+                                        </a>
+                                    </div>  
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="listing-content">
+                                <h3>
+                                    <a href="{% url 'core:product-detail' p.pid %}">{{ p.title }}</a>
+                                </h3>
+                                <span style="font-size: 13px;">{{ p.mini_description|safe }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Rental Listing Area -->
+
+<!-- Start Core Service Area -->
+<div id="services" class="core-service-area ptb-100">
+    <div class="container">
+        <div class="main-section-title">
+            <span class="sub-title">{% trans 'Dự Án' %}</span>
+        </div>
+
+        <div class="core-service-list-tab">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                {% for p in products %}
+                <li class="nav-item">
+                    <a class="nav-link {% if forloop.first %}active{% endif %}" id="core-service-{{ p.id }}-tab" data-bs-toggle="tab" href="#core-service-{{ p.id }}" role="tab" aria-controls="core-service-{{ p.id }}">{{ p.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% for p in products %}
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="core-service-{{ p.id }}" role="tabpanel">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="core-service-content">
+                                <div class="icon">
+                                    <i class="bx bxs-building-house"></i>
+                                </div>
+                                <h3 style="color: #00C195;">{{ p.title }}</h3>
+                                <p>{{ p.mini_description|safe }}</p>
+                                <ul class="list">
+                                    <li><i class='bx bx-chevrons-right'></i> <a href="{% url 'core:product-detail' p.pid %}" class="view-btn" style="color: #00C195;">{% trans 'Xem chi tiết' %}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="core-service-image">
+                                <img src="{{ p.p_images.all.0.images.url }}" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Core Service Area -->
+
+<!-- Start REAP Properties Area -->
+<div id="properties" class="reap-properties-area pb-100" style="padding-top: 20px;">
+    <div class="container">
+        <div class="section-top-title">
+            <span class="sub">{% trans 'Dự Án' %}</span>
+        </div>
+        <div class="reap-properties-items">
+            {% for p in products %}
+            <div class="item">
+                <a href="property-details.html">
+                    {% if p.p_images.all %}
+                    <img src="{{ p.p_images.all.0.images.url }}" alt="{{ p.title }}">
+                    {% endif %}
+                </a>
+                <div class="content">
+                    <div class="top">
+                        <div class="price">{{ p.title }}</div>
+                    </div>
+                    <!-- <h3>
+                        <a href="{% url 'core:product-detail' p.pid %}">{{ p.title }}</a>
+                    </h3> -->
+                    <p>{{ p.mini_description|safe }}</p>
+                    <div class="bottom">
+                        <a href="{% url 'core:product-detail' p.pid %}" class="view-btn">{% trans 'Xem chi tiết' %}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- End REAP Properties Area -->
+
+<!-- Start Hotel Tong Quan Area -->
+<div id="tong_quan" class="hotel-deals-area ptb-120 quicksand-font-family">
+    <div class="container">
+        <div class="section-top-title">
+            <span class="sub">{% trans 'Tổng quan' %}</span>
+        </div>
+        <div class="row justify-content-center g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="hotel-deals-card">
+                    <div class="image">
+                        <video loop="" muted="" autoplay="" class="deals-video">
+                            <source src="{% static 'assets/img/hotel/deals2.mp4' %}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="content">
+                        <h3>{% trans 'Lễ khởi công dự án The Oasis Riverside' %}</h3>
+                        <p>{% trans 'Lễ khởi công dự án The Oasis Riverside diễn ra ngày 7/8/2025, đánh dấu bước khởi đầu quan trọng cho một khu đô thị hiện đại bên sông. Với tầm nhìn kiến tạo không gian sống xanh, tiện nghi và đẳng cấp, dự án hứa hẹn mang đến cộng đồng thịnh vượng, hòa hợp cùng thiên nhiên.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="hotel-deals-card">
+                    <div class="image">
+                        <video loop="" muted="" autoplay="" class="deals-video">
+                            <source src="{% static 'assets/img/hotel/deals1.mp4' %}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="content">
+                        <h3>{% trans 'The Oasis Riverside' %}</h3>
+                        <p>{% trans 'The Oasis Riverside là dự án khu đô thị ven sông hiện đại, kết hợp không gian sống xanh cùng tiện ích cao cấp. Với vị trí đắc địa, quy hoạch đồng bộ và thiết kế tinh tế, dự án mang đến môi trường trong lành, cộng đồng văn minh, đáp ứng nhu cầu an cư và tận hưởng cuộc sống.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="hotel-deals-card">
+                    <div class="image">
+                        <video loop="" muted="" autoplay="" class="deals-video">
+                            <source src="{% static 'assets/img/hotel/deals3.mp4' %}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="content">
+                        <h3>{% trans 'The Oasis III' %}</h3>
+                        <p>{% trans 'The Oasis III là giai đoạn tiếp nối của chuỗi dự án The Oasis, mang đến không gian sống hiện đại, gần gũi thiên nhiên. Dự án sở hữu vị trí thuận lợi, hạ tầng hoàn thiện, tiện ích đa dạng, hướng đến cộng đồng trẻ năng động, văn minh, đồng thời khẳng định phong cách sống xanh và bền vững.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Hotel Deals Area -->
+
+<!-- Start Information Area -->
+<div id="contact" class="information-area with-bg-main-color" style="padding-top: 5px;">
+    <div class="container">
+        <div class="let-contact-form-with-gray-color">
+            <div class="main-section-title">
+                <span class="sub-title">Let’s Contact</span>
+                <h2>{% trans 'Liên hệ với tôi' %}</h2>
+            </div>
+
+            <form method="POST" id="contact-form-ajax" action="">
+                {% csrf_token %}
+                <div class="row m-0">
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="full_name" id="full_name" required="" class="form-control" placeholder="Tên của bạn" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" name="email" id="email" class="form-control" required="" placeholder="Email của bạn" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" id="phone" required="" class="form-control" placeholder="Số điện thoại của bạn" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12">
+                        <div class="form-group">
+                            <label>Your Message</label>
+                            <textarea name="message" class="form-control" id="message" required="" cols="30" rows="8" placeholder="Mình đang quan tâm về dự án..." required></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12">
+                        <div class="let-contact-btn">
+                            <button id="btn_submit" type="submit" class="main-default-btn">Gửi tin nhắn</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="let-contact-shape">
+                <img src="{% static 'assets/img/more-home/let-contact-shape.png' %}" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="information-shape-1">
+        <img src="{% static 'assets/img/more-home/information-shape-1.png' %}" alt="image">
+    </div>
+    <div class="information-shape-2">
+        <img src="{% static 'assets/img/more-home/information-shape-2.png' %}" alt="image">
+    </div>
+</div>
+<!-- End Information Area -->
+
+<div id="vr360" class="hotel-deals-area ptb-120 quicksand-font-family">
+    <div class="container">
+        <div class="section-top-title">
+            <span class="sub">{% trans 'VR360' %}</span>
+        </div>
+        <div class="row justify-content-center g-4">
+            <div class="col-lg-12 col-md-12">
+                <iframe width="100%" height="600px" allowfullscreen frameborder="0" src="https://360vr.com.vn/projects/theoasisriverside/"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-03 13:24+0000\n"
+"PO-Revision-Date: 2025-09-03 13:28+0000\n"
+"Last-Translator:   <admin@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: real_estate/settings.py:128
+msgid "Vietnamese"
+msgstr ""
+
+#: real_estate/settings.py:129
+msgid "Chinese"
+msgstr ""
+
+#: templates/core/index.html:19
+msgid "Tuyệt Tác Kiêu Hãnh Ven Sông"
+msgstr "河流之傲的杰作"
+
+#: templates/core/index.html:28
+msgid "Liên hệ"
+msgstr "接触"
+
+#: templates/core/index.html:72 templates/partials/base.html:66
+#: templates/partials/base.html:162
+msgid "Giới thiệu"
+msgstr "介绍"
+
+#: templates/core/index.html:74
+msgid ""
+"Khu biệt lập ven sông theo phong cách sống hiện đại là dự án tiếp nối sự "
+"thành công của The Oasis (Làng chuyên gia Việt Sing) tại Thành Phố Hồ Chí "
+"Minh (Cũ là Thuận An, tỉnh Bình Dương). Vượt qua mọi giới hạn của một nơi an"
+" cư thường thấy, The Oasis Riverside hội tụ những giá trị độc bản khó có thể"
+" tìm thấy ở bất cứ nơi đâu. Thiên nhiên ban tặng cho nơi đây một địa thế và "
+"vị trí tuyệt đẹp, trở thành nguồn cảm hứng bất tận cho đội ngũ thiết kế, để "
+"tạo nên một Tuyệt tác ven sông đầy kiêu hãnh ngay giữa lòng phố thị phồn "
+"hoa."
+msgstr ""
+"这个现代生活方式的河畔静谧社区延续了胡志明市（原平阳省顺安市）“绿洲”（越南歌唱专家村）的成功。“绿洲河畔”超越了普通住宅的局限，汇聚了其他地方难以寻觅的独特价值。大自然赋予了这里绝佳的地理位置和地形，成为设计团队无尽的灵感源泉，力求在繁华都市的中心地带打造一座引以为豪的河畔杰作。"
+
+#: templates/core/index.html:75
+msgid ""
+"Giống như nhiều đô thị phồn vinh trên thế giới gắn liền với những dòng sông "
+"xinh đẹp như: Sông Thame (London), sông Seine (Paris), Sông Hàn (Seol),... "
+"𝐓𝐡𝐞 𝐎𝐚𝐬𝐢𝐬 𝐑𝐢𝐯𝐞𝐫𝐬𝐢𝐝𝐞 là \"thành phố thu nhỏ\" được bao bọc bởi 2 dòng sông "
+"Bình Minh - Thị Tính. Những căn biệt thự tọa lạc trên địa thế đắt giá này "
+"chính là biểu tượng của sự sang trọng, đẳng cấp và hiếm có."
+msgstr ""
+"世界上许多繁华的城市都与美丽的河流息息相关，例如：泰晤士河（伦敦）、塞纳河（巴黎）、汉江（首尔）等等。 "
+"越南河内市是一座被平明市和氏静市两条河流环绕的“微型城市”。坐落于这一宝贵地段的别墅是奢华、品位和珍稀的象征。"
+
+#: templates/core/index.html:76
+msgid ""
+"𝐁𝐢𝐞̣̂𝐭 𝐓𝐡𝐮̛̣ 𝐓𝐡𝐞 𝐎𝐚𝐬𝐢𝐬 𝐑𝐢𝐯𝐞𝐫𝐬𝐢𝐝𝐞 sẵn sàng mang lại cho chủ nhân một chuẩn "
+"mực sống mới với kiến trúc hoàn mỹ, gần gũi với thiên nhiên và không gian "
+"sống riêng tư, biệt lập, an ninh và tiện nghi tối ưu."
+msgstr ""
+"𝐁𝐢𝐞𝐫𝐨𝐮𝐫 𝐎𝐚𝐬𝐢𝐬 𝐑𝐢𝐯𝐞𝐫𝐬𝐢𝐝𝐞 准备为业主带来全新的生活标准，拥有完美的建筑、贴近自然和私密、独立的生活空间、安全和最佳的设施。"
+
+#: templates/core/index.html:89
+msgid "Dự Án"
+msgstr "项目"
+
+#: templates/core/index.html:129 templates/partials/base.html:76
+#: templates/partials/base.html:168
+msgid "Tổng quan"
+msgstr "概述"
+
+#: templates/core/index.html:140
+msgid "Lễ khởi công dự án The Oasis Riverside"
+msgstr "绿洲河畔项目奠基仪式"
+
+#: templates/core/index.html:141
+msgid ""
+"Lễ khởi công dự án The Oasis Riverside diễn ra ngày 7/8/2025, đánh dấu bước "
+"khởi đầu quan trọng cho một khu đô thị hiện đại bên sông. Với tầm nhìn kiến "
+"tạo không gian sống xanh, tiện nghi và đẳng cấp, dự án hứa hẹn mang đến cộng"
+" đồng thịnh vượng, hòa hợp cùng thiên nhiên."
+msgstr ""
+"绿洲滨江项目于2025年8月7日举行奠基仪式，标志着该项目迈出了现代化滨江都市的重要一步。该项目以打造绿色、便捷、优雅的居住空间为愿景，致力于打造一个与自然和谐共存的繁荣社区。"
+
+#: templates/core/index.html:153
+msgid "The Oasis Riverside"
+msgstr "绿洲河畔"
+
+#: templates/core/index.html:154
+msgid ""
+"The Oasis Riverside là dự án khu đô thị ven sông hiện đại, kết hợp không "
+"gian sống xanh cùng tiện ích cao cấp. Với vị trí đắc địa, quy hoạch đồng bộ "
+"và thiết kế tinh tế, dự án mang đến môi trường trong lành, cộng đồng văn "
+"minh, đáp ứng nhu cầu an cư và tận hưởng cuộc sống."
+msgstr ""
+"绿洲河畔是一座现代化的滨河都市项目，融合绿色生活空间与高端配套设施。项目地理位置优越，规划同步，设计精良，环境清新，社区文明，满足居住与生活享受的需求。"
+
+#: templates/core/index.html:166
+msgid "The Oasis III"
+msgstr "绿洲三号"
+
+#: templates/core/index.html:167
+msgid ""
+"The Oasis III là giai đoạn tiếp nối của chuỗi dự án The Oasis, mang đến "
+"không gian sống hiện đại, gần gũi thiên nhiên. Dự án sở hữu vị trí thuận "
+"lợi, hạ tầng hoàn thiện, tiện ích đa dạng, hướng đến cộng đồng trẻ năng "
+"động, văn minh, đồng thời khẳng định phong cách sống xanh và bền vững."
+msgstr ""
+"绿洲三期是绿洲项目链的下一阶段，旨在打造亲近自然的现代生活空间。该项目地理位置便利，基础设施完善，设施齐全，旨在打造一个年轻、活力、文明的社区，同时倡导绿色可持续的生活方式。"
+
+#: templates/core/index.html:179 templates/partials/base.html:81
+#: templates/partials/base.html:171
+msgid "VR360"
+msgstr ""
+
+#: templates/core/product-list.html:22
+msgid "Home"
+msgstr ""
+
+#: templates/core/product-list.html:24
+msgid "Shop Page"
+msgstr ""
+
+#: templates/core/product-list.html:83 templates/core/product-list.html:134
+msgid "Showing"
+msgstr ""
+
+#: templates/core/product-list.html:83 templates/core/product-list.html:134
+msgid "products"
+msgstr "products"
+
+#: templates/partials/base.html:61 templates/partials/base.html:159
+msgid "Trang chủ"
+msgstr "家"
+
+#: templates/partials/base.html:71 templates/partials/base.html:165
+msgid "Dự án"
+msgstr "项目"
+
+#: templates/partials/base.html:124
+msgid ""
+"The Oasis Riverside là dự án ven sông cao cấp, kết hợp kiến trúc hiện đại và"
+" thiên nhiên xanh mát, mang đến không gian sống tiện nghi, thư thái cùng "
+"nhiều tiện ích nội khu đẳng cấp."
+msgstr "绿洲河畔是高端的河畔项目，融合了现代建筑与绿色自然，提供舒适、轻松的居住空间和许多一流的内部设施。"
+
+#: templates/partials/base.html:140
+msgid "Văn phòng"
+msgstr "办公室"

@@ -1,0 +1,51 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% load humanize %}
+{% load i18n %}
+{% block meta_header %}
+    <title>Ngân Nguyễn - The Oasis Riverside</title>
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+    <meta property="og:title" content="Ngân Nguyễn - The Oasis Riverside" />
+    <meta property="og:description" content="The Oasis Riverside - Tuyệt Tác Kiêu Hãnh Ven Sông" />
+    <meta property="og:url" content="{% url 'core:index' %}" />
+    <meta property="og:image" content="{% static 'assets/img/logo/logo.png' %}" />
+{% endblock meta_header %}
+{% block content %}
+<!-- Start Property Details Area -->
+    <div class="property-details-area ptb-120 quicksand-font-family">
+        <div class="container-fluid">
+            <div class="row justify-content-center g-4">
+                <div class="col-xl-6 col-md-12">
+                    <div class="property-details-image-tabs">
+                        <div class="tab-content" id="myTabContent">
+                            {% for p in p_image %}
+                            <div class="tab-pane fade show {% if forloop.first %}active{% endif %}" id="imgdt{{ p.id }}" role="tabpanel">
+                                <img src="{{ p.images.url }}" alt="image">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            {% for p in p_image %}
+                            <li class="nav-item">
+                                <a class="nav-link {% if forloop.first %}active{% endif %}" id="imgdt{{ p.id }}-tab" data-bs-toggle="tab" href="#imgdt{{ p.id }}" role="tab" aria-controls="imgdt{{ p.id }}">
+                                    <img src="{{ p.images.url }}" alt="image">
+                                </a>
+                            </li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="property-details-desc">
+                        <h2>{{ product.title }}</h2>
+                        <div class="content">
+                            {{ product.description|safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Property Details Area -->
+{% endblock content %}

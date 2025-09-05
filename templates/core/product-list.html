@@ -1,0 +1,86 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% load humanize %}
+{% load i18n %}
+{% block meta_header %}
+    <title>Ngân Nguyễn - The Oasis Riverside</title>
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+    <meta property="og:title" content="Ngân Nguyễn - The Oasis Riverside" />
+    <meta property="og:description" content="The Oasis Riverside - Tuyệt Tác Kiêu Hãnh Ven Sông" />
+    <meta property="og:url" content="{% url 'core:index' %}" />
+    <meta property="og:image" content="{% static 'assets/img/logo/logo.png' %}" />
+{% endblock meta_header %}
+{% block content %}
+    <!-- Breadcrumb -->
+    <section class="section-breadcrumb margin-b-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row bb-breadcrumb-inner">
+                        <div class="col-md-12 col-sm-12"></div>
+                            <ul class="bb-breadcrumb-list">
+                                <li class="bb-breadcrumb-item"><a href="{% url 'core:index' %}">{% trans 'Trang chủ' %}</a></li>
+                                <li><i class="ri-arrow-right-double-fill"></i></li>
+                                <li class="bb-breadcrumb-item active">{% trans 'Dự án' %}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop section -->
+    <section class="section-shop padding-b-50">
+        <div class="container">
+            <div class="row">
+                <div class="bb-shop-overlay"></div>
+                <div class="col-12">
+                    <div class="bb-shop-pro-inner">
+                        <div class="row mb-minus-24">
+                            <div class="col-12">
+                                <div class="bb-pro-list-top">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="bb-bl-btn">
+                                                <!-- <button type="button" class="grid-btn btn-filter">
+                                                    <i class="ri-equalizer-2-line"></i>
+                                                </button> -->
+                                                <button type="button" class="grid-btn btn-grid-100 active">
+                                                    <i class="ri-apps-line"></i>
+                                                </button>
+                                                <button type="button" class="grid-btn btn-list-100">
+                                                    <i class="ri-list-unordered"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% for p in products %}
+                            <div class="col-lg-3 col-md-4 col-6 mb-24 bb-product-box pro-bb-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                                <div class="bb-pro-box">
+                                    <div class="bb-pro-img">
+                                        <a href="{% url 'core:product-detail' p.pid %}">
+                                            <div class="inner-img">
+                                                <img class="main-img" src="{{ p.image.url }}"
+                                                    alt="product-1">
+                                                <img class="hover-img" src="{{ p.image.url }}"
+                                                    alt="product-1">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="bb-pro-contact">
+                                        <h4 class="bb-pro-title"><a href="{% url 'core:product-detail' p.pid %}">{{ p.title }}</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
