@@ -6298,7 +6298,8 @@ New Demo CSS
 .main-section-title .sub-title {
   color: #00C195;
   display: inline-block;
-  margin-bottom: 12px;
+  font-size: 27px;
+  font-weight: bold;
 }
 .main-section-title h2 {
   font-size: 40px;
@@ -7647,6 +7648,7 @@ New Demo CSS
 .why-choose-us-item.with-border {
   background-color: transparent;
   border: 1px solid #F5F7FB;
+  border-radius: 10px;
 }
 .why-choose-us-item .choose-image {
   margin-bottom: 25px;
@@ -7690,7 +7692,7 @@ New Demo CSS
   transition: 0.5s all ease;
 }
 .why-choose-us-item:hover {
-  background-color: #0d1820;
+  background-color: #3f8ec6;
   transform: translateY(-5px);
 }
 .why-choose-us-item:hover .choose-content h3 {
