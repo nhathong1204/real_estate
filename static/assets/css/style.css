@@ -1981,7 +1981,7 @@ button:focus {
   list-style-type: none;
   display: block;
   font-size: 16px;
-  color: #bdcbd5;
+  color: #777777;
   margin-bottom: 15px;
   position: relative;
   padding-left: 33px;
@@ -2000,7 +2000,7 @@ button:focus {
   -webkit-text-fill-color: transparent;
 }
 .one-footer-area .footer-item .footer-address ul li a {
-  color: #bdcbd5;
+  color: #777777;
 }
 .one-footer-area .footer-item .footer-address ul li a:hover {
   letter-spacing: 1px;

@@ -3,12 +3,15 @@
 {% load humanize %}
 {% load i18n %}
 {% block meta_header %}
-    <title>Ngân Nguyễn - The Oasis Riverside</title>
+    <title>The Oasis Riverside</title>
     <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
-    <meta property="og:title" content="Ngân Nguyễn - The Oasis Riverside" />
-    <meta property="og:description" content="The Oasis Riverside - Tuyệt Tác Kiêu Hãnh Ven Sông" />
+    <meta property="og:title" content="The Oasis Riverside" />
+    <meta property="og:description" content="The Oasis Riverside – dự án bất động sản ven sông mang đến không gian sống xanh, tiện ích hiện đại và vị trí chiến lược. Khám phá căn hộ cao cấp, thiết kế tinh tế, môi trường trong lành và tiềm năng sinh lời bền vững." />
     <meta property="og:url" content="{% url 'core:index' %}" />
     <meta property="og:image" content="{% static 'assets/img/logo/logo.png' %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:site_name" content="The Oasis Riverside" />
 {% endblock meta_header %}
 {% block content %}
     <!-- Breadcrumb -->

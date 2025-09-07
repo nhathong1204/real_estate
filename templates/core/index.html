@@ -3,12 +3,15 @@
 {% load humanize %}
 {% load i18n %}
 {% block meta_header %}
-    <title>Ngân Nguyễn - The Oasis Riverside</title>
+    <title>The Oasis Riverside</title>
     <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
-    <meta property="og:title" content="Ngân Nguyễn - The Oasis Riverside" />
-    <meta property="og:description" content="The Oasis Riverside - Tuyệt Tác Kiêu Hãnh Ven Sông" />
+    <meta property="og:title" content="The Oasis Riverside" />
+    <meta property="og:description" content="The Oasis Riverside – dự án bất động sản ven sông mang đến không gian sống xanh, tiện ích hiện đại và vị trí chiến lược. Khám phá căn hộ cao cấp, thiết kế tinh tế, môi trường trong lành và tiềm năng sinh lời bền vững." />
     <meta property="og:url" content="{% url 'core:index' %}" />
     <meta property="og:image" content="{% static 'assets/img/logo/logo.png' %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:site_name" content="The Oasis Riverside" />
 {% endblock meta_header %}
 {% block content %}
 <!-- Banner -->
@@ -24,9 +27,9 @@
                             </span>
                             <h1>{% trans 'Tuyệt Tác Kiêu Hãnh Ven Sông' %}</h1>
                             <div class="banner-btn">
-                                <a class="cmn-banner-btn" href="#contact">
-                                    <i class='bx bxs-contact'></i>
-                                    {% trans 'LIÊN HỆ' %}
+                                <a class="cmn-banner-btn" href="tel:0909901666">
+                                    <i class='bx bx-phone-call'></i>
+                                    0909.901.666
                                 </a>
                                 <a class="banner-right-btn" href="#du_an">
                                     <i class='bx bxs-building-house'></i>
@@ -48,9 +51,9 @@
                             </span>
                             <h1>{% trans 'Tuyệt Tác Kiêu Hãnh Ven Sông' %}</h1>
                             <div class="banner-btn">
-                                <a class="cmn-banner-btn" href="#contact">
-                                    <i class='bx bxs-contact'></i>
-                                    {% trans 'LIÊN HỆ' %}
+                                <a class="cmn-banner-btn" href="tel:0909901666">
+                                    <i class='bx bx-phone-call'></i>
+                                    0909.901.666
                                 </a>
                                 <a class="banner-right-btn" href="#du_an">
                                     <i class='bx bxs-building-house'></i>
@@ -72,9 +75,9 @@
                             </span>
                             <h1>{% trans 'Tuyệt Tác Kiêu Hãnh Ven Sông' %}</h1>
                             <div class="banner-btn">
-                                <a class="cmn-banner-btn" href="#contact">
-                                    <i class='bx bxs-contact'></i>
-                                    {% trans 'LIÊN HỆ' %}
+                                <a class="cmn-banner-btn" href="tel:0909901666">
+                                    <i class='bx bx-phone-call'></i>
+                                    0909.901.666
                                 </a>
                                 <a class="banner-right-btn" href="#du_an">
                                     <i class='bx bxs-building-house'></i>
@@ -244,91 +247,6 @@
 </div>
 <!-- End Process Style Area -->
 
-<!-- Start Rental Du An Area -->
-<div id="du_an" class="rental-listing-area pb-120 quicksand-font-family">
-    <div class="container">
-        <div class="main-section-title">
-            <span class="sub-title">{% trans 'SẢN PHẨM DỰ ÁN' %}</span>
-        </div>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="one" role="tabpanel">
-                <div class="row left-content-center g-4">
-                    {% for p in products %}
-                    <div class="col-xl-3 col-md-6">
-                        <div class="rental-listing-card">
-                            <div class="listing-image">
-                                <div class="listing-images-slider owl-theme owl-carousel">
-                                    {% for p_img in p.p_images.all %}
-                                    <div class="image">
-                                        <a href="{% url 'core:product-detail' p.pid %}">
-                                            <img src="{{ p_img.images.url }}" alt="image">
-                                        </a>
-                                    </div>  
-                                    {% endfor %}
-                                </div>
-                            </div>
-                            <div class="listing-content">
-                                <h3>
-                                    <a href="{% url 'core:product-detail' p.pid %}">{{ p.title }}</a>
-                                </h3>
-                                <span style="font-size: 13px;">{{ p.mini_description|safe }}</span>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Rental Listing Area -->
-
-<!-- Start Core Service Area -->
-<div id="services" class="core-service-area" style="padding-top: 20px;">
-    <div class="container">
-        <div class="main-section-title">
-            <span class="sub-title">{% trans 'SẢN PHẨM DỰ ÁN' %}</span>
-        </div>
-
-        <div class="core-service-list-tab">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                {% for p in products %}
-                <li class="nav-item">
-                    <a class="nav-link {% if forloop.first %}active{% endif %}" id="core-service-{{ p.id }}-tab" data-bs-toggle="tab" href="#core-service-{{ p.id }}" role="tab" aria-controls="core-service-{{ p.id }}">{{ p.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-
-            {% for p in products %}
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="core-service-{{ p.id }}" role="tabpanel">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-lg-7 col-md-6">
-                            <div class="core-service-content">
-                                <div class="icon">
-                                    <i class="bx bxs-building-house"></i>
-                                </div>
-                                <h3 style="color: #00C195;">{{ p.title }}</h3>
-                                <p>{{ p.mini_description|safe }}</p>
-                                <ul class="list">
-                                    <li><i class='bx bx-chevrons-right'></i> <a href="{% url 'core:product-detail' p.pid %}" class="view-btn" style="color: #00C195;">{% trans 'Xem chi tiết' %}</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-6">
-                            <div class="core-service-image">
-                                <img src="{{ p.p_images.all.0.images.url }}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Core Service Area -->
-
 <!-- Start REAP Properties Area -->
 <div id="properties" class="reap-properties-area pb-100" style="padding-top: 20px;">
     <div class="container">
@@ -372,7 +290,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="hotel-deals-card">
                     <div class="image">
-                        <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/uchib9?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+                        <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/uchib9?autoplay=1&muted=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;border-radius: 10px;"></iframe></div>
                     </div>
                     <div class="content">
                         <h3>{% trans 'Lễ khởi công dự án The Oasis Riverside' %}</h3>
@@ -383,7 +301,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="hotel-deals-card">
                     <div class="image">
-                        <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/l6s4ph?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+                        <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/l6s4ph?autoplay=1&muted=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;border-radius: 10px;"></iframe></div>
                     </div>
                     <div class="content">
                         <h3>{% trans 'The Oasis Riverside' %}</h3>
@@ -394,7 +312,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="hotel-deals-card">
                     <div class="image">
-                        <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/3bkx83?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+                        <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/3bkx83?autoplay=1&muted=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;border-radius: 10px;"></iframe></div>
                     </div>
                     <div class="content">
                         <h3>{% trans 'The Oasis III' %}</h3>
