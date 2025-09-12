@@ -247,6 +247,64 @@
 </div>
 <!-- End Process Style Area -->
 
+<!-- START TIỆN ÍCH DỰ ÁN -->
+<div id="tien_ich" class="offer-style-area pb-100" style="padding-top: 20px;">
+    <div class="container">
+        <div class="main-section-title">
+            <span class="sub-title">{% trans 'TIỆN ÍCH DỰ ÁN' %}</span>
+        </div>
+
+        <div class="offer-style-slider owl-carousel owl-theme">
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan1.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan2.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan3.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan4.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan5.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan6.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan7.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan8.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+            <div class="offer-style-card with-black-color">
+                <div class="offer-image">
+                    <img style="height: 250px !important;;border-radius: 10px" src="{% static 'assets/img/tienichduan9.jpg' %}" alt="Tiện ích dự án">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End TIỆN ÍCH DỰ ÁN -->
+
 <!-- Start REAP Properties Area -->
 <div id="du_an" class="reap-properties-area pb-100" style="padding-top: 20px;">
     <div class="container">
@@ -256,7 +314,7 @@
         <div class="reap-properties-items">
             {% for p in products %}
             <div class="item">
-                <a href="property-details.html">
+                <a href="{% url 'core:product-detail' p.pid %}">
                     {% if p.p_images.all %}
                     <img src="{{ p.p_images.all.0.images.url }}" alt="{{ p.title }}">
                     {% endif %}

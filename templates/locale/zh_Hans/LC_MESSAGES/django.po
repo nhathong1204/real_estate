@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-12 12:27+0000\n"
+"POT-Creation-Date: 2025-09-12 13:25+0000\n"
 "PO-Revision-Date: 2025-09-07 16:25+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,13 +38,13 @@ msgid "Tuyệt Tác Kiêu Hãnh Ven Sông"
 msgstr "河流之傲的杰作"
 
 #: templates/core/index.html:36 templates/core/index.html:60
-#: templates/core/index.html:84 templates/core/index.html:254
-#: templates/partials/base.html:76 templates/partials/base.html:191
+#: templates/core/index.html:84 templates/core/index.html:312
+#: templates/partials/base.html:81 templates/partials/base.html:199
 msgid "SẢN PHẨM DỰ ÁN"
 msgstr "项目产品"
 
 #: templates/core/index.html:116 templates/partials/base.html:66
-#: templates/partials/base.html:185
+#: templates/partials/base.html:190
 msgid "GIỚI THIỆU DỰ ÁN"
 msgstr "项目介绍"
 
@@ -104,7 +104,7 @@ msgstr ""
 "私密、独立的生活空间、安全和最佳的设施。"
 
 #: templates/core/index.html:135 templates/partials/base.html:71
-#: templates/partials/base.html:188
+#: templates/partials/base.html:193
 msgid "VỊ TRÍ XUNG QUANH"
 msgstr "周边位置"
 
@@ -188,20 +188,27 @@ msgstr "Becamex国际医院"
 msgid "Khu đô thị và Công nghiệp VSIPI"
 msgstr "VSIPI 城市和工业园区"
 
-#: templates/core/index.html:273
+#: templates/core/index.html:254 templates/partials/base.html:76
+#: templates/partials/base.html:196
+#, fuzzy
+#| msgid "SỰ KIỆN DỰ ÁN"
+msgid "TIỆN ÍCH DỰ ÁN"
+msgstr "项目概述"
+
+#: templates/core/index.html:331
 msgid "Xem chi tiết"
 msgstr "查看详情"
 
-#: templates/core/index.html:287 templates/partials/base.html:81
-#: templates/partials/base.html:194
+#: templates/core/index.html:345 templates/partials/base.html:86
+#: templates/partials/base.html:202
 msgid "SỰ KIỆN DỰ ÁN"
 msgstr "项目概述"
 
-#: templates/core/index.html:296
+#: templates/core/index.html:354
 msgid "Lễ khởi công dự án The Oasis Riverside"
 msgstr "The Oasis Riverside项目开工仪式"
 
-#: templates/core/index.html:297
+#: templates/core/index.html:355
 msgid ""
 "Lễ khởi công dự án The Oasis Riverside diễn ra ngày 7/8/2025, đánh dấu bước "
 "khởi đầu quan trọng cho một khu đô thị hiện đại bên sông. Với tầm nhìn kiến "
@@ -212,11 +219,11 @@ msgstr ""
 "江都市建设的重要一步。该项目以打造绿色、便捷、优雅的居住空间为愿景，致力于打"
 "造一个与自然和谐共存的繁荣社区。"
 
-#: templates/core/index.html:307 templates/core/index.html:318
+#: templates/core/index.html:365 templates/core/index.html:376
 msgid "The Oasis Riverside"
 msgstr "The Oasis Riverside"
 
-#: templates/core/index.html:308
+#: templates/core/index.html:366
 msgid ""
 "The Oasis Riverside là dự án khu đô thị ven sông hiện đại, kết hợp không "
 "gian sống xanh cùng tiện ích cao cấp. Với vị trí đắc địa, quy hoạch đồng bộ "
@@ -227,7 +234,7 @@ msgstr ""
 "施。项目地理位置优越，规划同步，设计精良，环境清新，社区文明，满足居住与生活"
 "享受的需求。"
 
-#: templates/core/index.html:319
+#: templates/core/index.html:377
 #, fuzzy
 #| msgid ""
 #| "The Oasis III là giai đoạn tiếp nối của chuỗi dự án The Oasis, mang đến "
@@ -244,48 +251,48 @@ msgstr ""
 "地理位置便利，基础设施齐全，设施齐全，旨在打造一个年轻、活力、文明的社区，同"
 "时倡导绿色可持续的生活方式。"
 
-#: templates/core/index.html:333 templates/partials/base.html:209
+#: templates/core/index.html:391 templates/partials/base.html:217
 msgid "Liên hệ với tôi"
 msgstr "接触"
 
-#: templates/core/index.html:341
+#: templates/core/index.html:399
 msgid "Name"
 msgstr "姓名"
 
-#: templates/core/index.html:342 templates/partials/base.html:213
+#: templates/core/index.html:400 templates/partials/base.html:221
 msgid "Tên của bạn"
 msgstr "您的名字"
 
-#: templates/core/index.html:349
+#: templates/core/index.html:407
 msgid "Email"
 msgstr "电子邮件"
 
-#: templates/core/index.html:350 templates/partials/base.html:217
+#: templates/core/index.html:408 templates/partials/base.html:225
 msgid "Email của bạn"
 msgstr "您的电子邮件地址"
 
-#: templates/core/index.html:357
+#: templates/core/index.html:415
 msgid "Phone Number"
 msgstr "电话号码"
 
-#: templates/core/index.html:358 templates/partials/base.html:221
+#: templates/core/index.html:416 templates/partials/base.html:229
 msgid "Số điện thoại của bạn"
 msgstr "您的电话号码"
 
-#: templates/core/index.html:365
+#: templates/core/index.html:423
 msgid "Your Message"
 msgstr "您的留言"
 
-#: templates/core/index.html:366 templates/partials/base.html:225
+#: templates/core/index.html:424 templates/partials/base.html:233
 msgid "Mình đang quan tâm về dự án..."
 msgstr "我对这个项目很感兴趣..."
 
-#: templates/core/index.html:373
+#: templates/core/index.html:431
 msgid "Gửi tin nhắn"
 msgstr "发送消息"
 
-#: templates/core/index.html:399 templates/partials/base.html:91
-#: templates/partials/base.html:200
+#: templates/core/index.html:457 templates/partials/base.html:96
+#: templates/partials/base.html:208
 msgid "VR360"
 msgstr "VR360"
 
@@ -297,15 +304,15 @@ msgstr "家"
 msgid "Dự án"
 msgstr "项目"
 
-#: templates/partials/base.html:61 templates/partials/base.html:182
+#: templates/partials/base.html:61 templates/partials/base.html:187
 msgid "TRANG CHỦ"
 msgstr "家"
 
-#: templates/partials/base.html:86 templates/partials/base.html:197
+#: templates/partials/base.html:91 templates/partials/base.html:205
 msgid "LIÊN HỆ"
 msgstr "接触"
 
-#: templates/partials/base.html:134
+#: templates/partials/base.html:139
 msgid ""
 "The Oasis Riverside là dự án ven sông cao cấp, kết hợp kiến trúc hiện đại và "
 "thiên nhiên xanh mát, mang đến không gian sống tiện nghi, thư thái cùng "
@@ -314,11 +321,11 @@ msgstr ""
 "The Oasis Riverside 是一个高端的河滨项目，融合了现代建筑与绿色自然，提供舒"
 "适、轻松的居住空间和许多一流的内部设施。"
 
-#: templates/partials/base.html:158
+#: templates/partials/base.html:163
 msgid "Văn phòng"
 msgstr "办公室"
 
-#: templates/partials/base.html:179
+#: templates/partials/base.html:184
 msgid "Về chúng tôi"
 msgstr "关于我们"
 
