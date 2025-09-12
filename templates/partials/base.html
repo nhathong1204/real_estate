@@ -62,39 +62,53 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#about" class="nav-link">
-                                    {% trans 'GIỚI THIỆU DỰ ÁN' %}
-                                </a>
+                                {% if request.resolver_match.url_name == "index" %}
+                                    <a href="#about" class="nav-link">{% trans 'GIỚI THIỆU DỰ ÁN' %}</a>
+                                {% else %}
+                                    <a href="{% url 'core:index' %}#about" class="nav-link">{% trans 'GIỚI THIỆU DỰ ÁN' %}</a>
+                                {% endif %}
                             </li>
                             <li class="nav-item">
-                                <a href="#vi_tri" class="nav-link">
-                                    {% trans 'VỊ TRÍ XUNG QUANH' %}
-                                </a>
+                                {% if request.resolver_match.url_name == "index" %}
+                                    <a href="#vi_tri" class="nav-link">{% trans 'VỊ TRÍ XUNG QUANH' %}</a>
+                                {% else %}
+                                    <a href="{% url 'core:index' %}#vi_tri" class="nav-link">{% trans 'VỊ TRÍ XUNG QUANH' %}</a>
+                                {% endif %}
                             </li>
                             <li class="nav-item">
-                                <a href="#du_an" class="nav-link">
-                                    {% trans 'TIỆN ÍCH DỰ ÁN' %}
-                                </a>
+                                {% if request.resolver_match.url_name == "index" %}
+                                    <a href="#tien_ich" class="nav-link">{% trans 'TIỆN ÍCH DỰ ÁN' %}</a>
+                                {% else %}
+                                    <a href="{% url 'core:index' %}#tien_ich" class="nav-link">{% trans 'TIỆN ÍCH DỰ ÁN' %}</a>
+                                {% endif %}
                             </li>
                             <li class="nav-item">
-                                <a href="#tien_ich" class="nav-link">
-                                    {% trans 'SẢN PHẨM DỰ ÁN' %}
-                                </a>
+                                {% if request.resolver_match.url_name == "index" %}
+                                    <a href="#du_an" class="nav-link">{% trans 'SẢN PHẨM DỰ ÁN' %}</a>
+                                {% else %}
+                                    <a href="{% url 'core:index' %}#du_an" class="nav-link">{% trans 'SẢN PHẨM DỰ ÁN' %}</a>
+                                {% endif %}
                             </li>
                             <li class="nav-item">
-                                <a href="#tong_quan" class="nav-link">
-                                    {% trans 'SỰ KIỆN DỰ ÁN' %}
-                                </a>
+                                {% if request.resolver_match.url_name == "index" %}
+                                    <a href="#tong_quan" class="nav-link">{% trans 'SỰ KIỆN DỰ ÁN' %}</a>
+                                {% else %}
+                                    <a href="{% url 'core:index' %}#tong_quan" class="nav-link">{% trans 'SỰ KIỆN DỰ ÁN' %}</a>
+                                {% endif %}
                             </li>
                             <li class="nav-item">
-                                <a href="#contact" class="nav-link">
-                                    {% trans 'LIÊN HỆ' %}
-                                </a>
+                                {% if request.resolver_match.url_name == "index" %}
+                                    <a href="#contact" class="nav-link">{% trans 'LIÊN HỆ' %}</a>
+                                {% else %}
+                                    <a href="{% url 'core:index' %}#contact" class="nav-link">{% trans 'LIÊN HỆ' %}</a>
+                                {% endif %}
                             </li>
                             <li class="nav-item">
-                                <a href="#vr360" class="nav-link">
-                                    {% trans 'VR360' %}
-                                </a>
+                                {% if request.resolver_match.url_name == "index" %}
+                                    <a href="#vr360" class="nav-link">{% trans 'VR360' %}</a>
+                                {% else %}
+                                    <a href="{% url 'core:index' %}#vr360" class="nav-link">{% trans 'VR360' %}</a>
+                                {% endif %}
                             </li>
                         </ul>
     
@@ -187,25 +201,53 @@
                                         <a href="{% url 'core:index' %}">{% trans 'TRANG CHỦ' %}</a>
                                     </li>
                                     <li>
-                                        <a href="#about">{% trans 'GIỚI THIỆU DỰ ÁN' %}</a>
+                                        {% if request.resolver_match.url_name == "index" %}
+                                            <a href="#about" class="nav-link">{% trans 'GIỚI THIỆU DỰ ÁN' %}</a>
+                                        {% else %}
+                                            <a href="{% url 'core:index' %}#about" class="nav-link">{% trans 'GIỚI THIỆU DỰ ÁN' %}</a>
+                                        {% endif %}
                                     </li>
                                     <li>
-                                        <a href="#vi_tri">{% trans 'VỊ TRÍ XUNG QUANH' %}</a>
+                                        {% if request.resolver_match.url_name == "index" %}
+                                            <a href="#vi_tri" class="nav-link">{% trans 'VỊ TRÍ XUNG QUANH' %}</a>
+                                        {% else %}
+                                            <a href="{% url 'core:index' %}#vi_tri" class="nav-link">{% trans 'VỊ TRÍ XUNG QUANH' %}</a>
+                                        {% endif %}
                                     </li>
                                     <li>
-                                        <a href="#tien_ich">{% trans 'TIỆN ÍCH DỰ ÁN' %}</a>
+                                        {% if request.resolver_match.url_name == "index" %}
+                                            <a href="#tien_ich" class="nav-link">{% trans 'TIỆN ÍCH DỰ ÁN' %}</a>
+                                        {% else %}
+                                            <a href="{% url 'core:index' %}#tien_ich" class="nav-link">{% trans 'TIỆN ÍCH DỰ ÁN' %}</a>
+                                        {% endif %}
                                     </li>
                                     <li>
-                                        <a href="#du_an">{% trans 'SẢN PHẨM DỰ ÁN' %}</a>
+                                        {% if request.resolver_match.url_name == "index" %}
+                                            <a href="#du_an" class="nav-link">{% trans 'SẢN PHẨM DỰ ÁN' %}</a>
+                                        {% else %}
+                                            <a href="{% url 'core:index' %}#du_an" class="nav-link">{% trans 'SẢN PHẨM DỰ ÁN' %}</a>
+                                        {% endif %}
                                     </li>
                                     <li>
-                                        <a href="#tong_quan">{% trans 'SỰ KIỆN DỰ ÁN' %}</a>
+                                        {% if request.resolver_match.url_name == "index" %}
+                                            <a href="#tong_quan" class="nav-link">{% trans 'SỰ KIỆN DỰ ÁN' %}</a>
+                                        {% else %}
+                                            <a href="{% url 'core:index' %}#tong_quan" class="nav-link">{% trans 'SỰ KIỆN DỰ ÁN' %}</a>
+                                        {% endif %}
                                     </li>
                                     <li>
-                                        <a href="#contact">{% trans 'LIÊN HỆ' %}</a>
+                                        {% if request.resolver_match.url_name == "index" %}
+                                            <a href="#contact" class="nav-link">{% trans 'LIÊN HỆ' %}</a>
+                                        {% else %}
+                                            <a href="{% url 'core:index' %}#contact" class="nav-link">{% trans 'LIÊN HỆ' %}</a>
+                                        {% endif %}
                                     </li>
                                     <li>
-                                        <a href="#vr360">{% trans 'VR360' %}</a>
+                                        {% if request.resolver_match.url_name == "index" %}
+                                            <a href="#vr360" class="nav-link">{% trans 'VR360' %}</a>
+                                        {% else %}
+                                            <a href="{% url 'core:index' %}#vr360" class="nav-link">{% trans 'VR360' %}</a>
+                                        {% endif %}
                                     </li>
                                 </ul>
                             </div>
