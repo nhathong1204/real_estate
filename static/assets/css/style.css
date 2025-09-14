@@ -2061,6 +2061,10 @@ button:focus {
   background-image: url("../img/home-two/banner-slider3.jpg");
 }
 
+.two-banner-four {
+  background-image: url("../img/home-two/banner-slider4.jpg");
+}
+
 .two-banner-area {
   height: 850px;
   background-size: cover;
@@ -2113,11 +2117,13 @@ button:focus {
   display: inline-block;
   font-size: 20px;
   position: relative;
-  top: 5px;
+  top: 3px;
   margin-right: 4px;
 }
 .two-banner-area .banner-content .banner-btn .cmn-banner-btn {
   margin-right: 10px;
+  font-weight: bold;
+  color: red;
 }
 .two-banner-area .banner-content .banner-btn .banner-right-btn {
   border: 1px solid #ffffff;
