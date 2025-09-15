@@ -2129,6 +2129,7 @@ button:focus {
   padding: 11px 25px 13px;
   margin-left: 10px;
   font-size: 22px;
+  font-weight: bold;
 }
 .two-banner-area .banner-content .banner-btn .banner-right-btn i {
   top: 1px;
